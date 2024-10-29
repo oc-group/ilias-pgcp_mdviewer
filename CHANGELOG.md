@@ -1,5 +1,9 @@
 # MDViewer Changelog
 
+## 4.0.1
+
+- Fixed an issue where an undefined array offset was accessed.
+
 ## 4.0.0
 
 - Added ILIAS 9 compatibility.
