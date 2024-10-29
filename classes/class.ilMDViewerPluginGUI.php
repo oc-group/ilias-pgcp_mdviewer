@@ -114,7 +114,7 @@ class ilMDViewerPluginGUI extends ilPageComponentPluginGUI
         /** @var $template ilTemplate */
         $template = $this->getPlugin()->getTemplate('tpl.output.html', true, true);
         $external_file = $a_properties[self::F_EXTERNAL_MD];
-        $link_prefix = $a_properties[self::F_LINK_PREFIX];
+        $link_prefix = $a_properties[self::F_LINK_PREFIX] ?? '';
         $link_prefix = ('' === $link_prefix) ?
             rtrim(dirname($external_file), "/") . "/" :
             $link_prefix;
