@@ -31,7 +31,7 @@ class ilMDViewerConfig extends ActiveRecord
     /**
      * @return mixed
      */
-    public static function getConfigValue(string $name = null)
+    public static function getConfigValue(?string $name = null)
     {
         if (!isset(self::$cache_loaded[$name])) {
             $obj = self::find($name);
